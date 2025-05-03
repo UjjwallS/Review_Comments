@@ -31,7 +31,7 @@ def generate_review(row):
         return f"Error: {str(e)}"
 
 # Generate reviews
-print("Generating reviews for all products...")
+print("Generating reviews for all products....")
 df["Generated Review"] = df.apply(generate_review, axis=1)
 
 # Save output
